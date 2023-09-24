@@ -1,0 +1,56 @@
+#title {
+   text-align: center;
+   border-bottom: 2px solid black;
+}
+
+#title h1 a[href="home.html"] {
+   text-decoration: none;
+}
+
+#title h1 a[href="home.html"]:hover {
+   color:red;
+}
+
+#container {
+   display: grid;
+   grid-template-columns: 160px 1fr;
+   grid-template-rows: 2fr 1fr;
+}
+
+#navi {
+   padding: 20px;
+   margin: 0;
+   width: 120px;
+   height: 200px;
+   list-style: none;
+
+}
+
+#navi li {
+   padding: 2px;
+}
+
+#navi li a {
+   text-decoration: none;
+}
+
+#navi li a:hover {
+   color: red;
+   font-size: 20px;
+}
+
+.currentSelect {
+   color: rgb(21, 114, 156);
+   font-size: 20px;
+   font-weight: bold;
+}
+
+#article {
+   margin: 0 auto;
+   padding: 20px;
+   border-left: 2px solid black;
+}
+
+
+
+

@@ -5,15 +5,25 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>미디어쿼리</title>
    <style>
+      
       div {
          border: 5px solid green;
          font-size: 50px;
       }
-      @media(min-width:800px) {
-         div{
-            display:none;
+
+      /* @media only screen and (min-width: 800px) and (max-width: 1000px) {
+         div {
+            display: none;
+         }
+      } */
+
+      /* 위의 코드와 같음 */
+      @media(min-width: 800px) and (max-width: 1000px) {
+         div {
+            display: none;
          }
       }
+
    </style>
 </head>
 <body>

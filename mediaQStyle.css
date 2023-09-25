@@ -1,0 +1,53 @@
+#title {
+   text-align: center;
+   border-bottom: 1px solid black;
+}
+
+#title h1 a[href="home.html"] {
+   text-decoration: none;
+}
+
+#title h1 a[href="home.html"]:hover {
+   color:red;
+}
+
+#container {
+   display: grid;
+   grid-template-rows: 100px 1fr;
+}
+
+#navi {
+   margin: 0 auto;
+   padding: 10px;
+   list-style: none;
+
+}
+
+#navi li {
+   padding: 2px;
+}
+
+#navi li a {
+   text-decoration: none;
+}
+
+#navi li a:hover {
+   color: red;
+   font-size: 20px;
+}
+
+.currentSelect {
+   color: rgb(21, 114, 156);
+   font-size: 20px;
+   font-weight: bold;
+}
+
+#article {
+   margin-top: 10px auto;
+   padding: 2px;
+   border-top: solid black 1px;
+}
+
+
+
+

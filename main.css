@@ -1,3 +1,26 @@
+#NightDay {
+   position: fixed;
+   top: 20px;
+   right: 40px;
+   border-radius: 100%;
+   background: linear-gradient(to right bottom, rgb(132, 132, 185), rgba(0, 0, 0, 0.842));
+   width: 40px;
+   height: 40px;
+}
+
+
+#moonSun {
+   position: fixed;
+   top: 20px;
+   right: 50px;
+   width: 30px;
+   height: 30px;
+   background-color: transparent;
+   border-radius: 50%;
+   box-shadow: 5px 5px 0 0 yellow;
+   
+}
+
 #title {
    text-align: center;
    border-bottom: 2px solid black;
@@ -50,6 +73,7 @@
    padding: 20px;
    border-left: 2px solid black;
 }
+
 
 
 

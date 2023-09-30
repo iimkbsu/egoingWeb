@@ -10,10 +10,10 @@ if(localStorage.getItem('mod') == 'night') {
 
 function changeMod() {
 
-   if(localStorage.getItem('mod') == 'day') {
+   if(document.querySelector('body').getAttribute('name') == 'dayMod') {
       localStorage.setItem('mod', 'night');
       document.querySelector('body').setAttribute('name', 'nightMod');
-   }else if(localStorage.getItem('mod') == 'night') {
+   }else if(document.querySelector('body').getAttribute('name') == 'nightMod') {
       localStorage.setItem('mod', 'day');
       document.querySelector('body').setAttribute('name', 'dayMod');
    }

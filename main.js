@@ -1,19 +1,24 @@
-var vv = document.getElementById("moonSun");
-var va = document.getElementById("NightDay");
-var count = 1;
+var ms = document.getElementById("moonSun");
+var nd = document.getElementById("NightDay");
 
-vv.onclick = changeColor;
-va.onclick = changeColor;
+if(localStorage.getItem('mod') == 'night') {
+   document.querySelector('body').setAttribute('name', 'nightMod');
+}else if(localStorage.getItem('mod') == 'day') {
+   document.querySelector('body').setAttribute('name', 'dayMod');
+}
 
-function changeColor() {
-   if(count == 1) {
-      document.querySelector("body").style.color='white';
-      document.querySelector("body").style.backgroundColor='black';
-      count = 0;
-   }else {
-      document.querySelector("body").style.color='black';
-      document.querySelector("body").style.backgroundColor='white';
-      count = 1;
+
+function changeMod() {
+
+   if(localStorage.getItem('mod') == 'day') {
+      localStorage.setItem('mod', 'night');
+      document.querySelector('body').setAttribute('name', 'nightMod');
+   }else if(localStorage.getItem('mod') == 'night') {
+      localStorage.setItem('mod', 'day');
+      document.querySelector('body').setAttribute('name', 'dayMod');
    }
 
 }
+
+ms.onclick=changeMod;
+nd.onclick=changeMod;

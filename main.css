@@ -1,46 +1,50 @@
-#NightDay {
+
+body[name='dayMod'] #NightDay {
    position: fixed;
    top: 20px;
    right: 40px;
    border-radius: 100%;
-   background: linear-gradient(to right bottom, rgb(132, 132, 185), rgba(0, 0, 0, 0.842));
+   background: linear-gradient(to right bottom, rgb(255, 255, 255), rgba(4, 211, 238, 0.842));
    width: 40px;
    height: 40px;
+   transition: all 1s;
 }
 
 
-#moonSun {
+
+body[name='dayMod'] #moonSun {
    position: fixed;
-   top: 20px;
-   right: 50px;
+   top: 25px;
+   right: 45px;
    width: 30px;
    height: 30px;
-   background-color: transparent;
-   border-radius: 50%;
-   box-shadow: 5px 5px 0 0 yellow;
-   
+   border-radius: 100%;
+   background: linear-gradient(to left top, rgb(255, 158, 67), rgb(253, 213, 138));
+   transition: all 1s;
 }
 
-#title {
+
+
+body[name='dayMod'] #title {
    text-align: center;
    border-bottom: 2px solid black;
 }
 
-#title h1 a[href="home.html"] {
+body[name='dayMod'] #title h1 a[href="home.html"] {
    text-decoration: none;
 }
 
-#title h1 a[href="home.html"]:hover {
+body[name='dayMod'] #title h1 a[href="home.html"]:hover {
    color:red;
 }
 
-#container {
+body[name='dayMod'] #container {
    display: grid;
    grid-template-columns: 160px 1fr;
    grid-template-rows: 2fr 1fr;
 }
 
-#navi {
+body[name='dayMod'] #navi {
    padding: 20px;
    margin: 0;
    width: 120px;
@@ -49,26 +53,26 @@
 
 }
 
-#navi li {
+body[name='dayMod'] #navi li {
    padding: 2px;
 }
 
-#navi li a {
+body[name='dayMod'] #navi li a {
    text-decoration: none;
 }
 
-#navi li a:hover {
+body[name='dayMod'] #navi li a:hover {
    color: red;
    font-size: 20px;
 }
 
-.currentSelect {
+body[name='dayMod'] .currentSelect {
    color: rgb(21, 114, 156);
    font-size: 20px;
    font-weight: bold;
 }
 
-#article {
+body[name='dayMod'] #article {
    margin: 0 auto;
    padding: 20px;
    border-left: 2px solid black;
@@ -78,3 +82,92 @@
 
 
 
+
+body[name='nightMod'] #NightDay {
+   position: fixed;
+   top: 20px;
+   right: 40px;
+   border-radius: 100%;
+   background: linear-gradient(to right bottom, rgb(132, 132, 185), rgba(0, 0, 0, 0.842));
+   width: 40px;
+   height: 40px;
+   transition: all 1s;
+}
+
+
+
+body[name='nightMod'] #moonSun {
+   position: fixed;
+   top: 20px;
+   right: 50px;
+   width: 30px;
+   height: 30px;
+   background-color: transparent;
+   border-radius: 50%;
+   box-shadow: 5px 5px 0 0 yellow;
+   transition: all 1s;
+   
+}
+
+
+
+body[name='nightMod'] {
+   background-color: black;
+}
+
+
+body[name='nightMod'] #title {
+   text-align: center;
+   border-bottom: 2px solid rgb(255, 255, 255);
+   color: beige;
+}
+
+body[name='nightMod'] #title h1 a[href="home.html"] {
+   text-decoration: none;
+}
+
+body[name='nightMod'] #title h1 a[href="home.html"]:hover {
+   color:red;
+}
+
+body[name='nightMod'] #container {
+   display: grid;
+   grid-template-columns: 160px 1fr;
+   grid-template-rows: 2fr 1fr;
+}
+
+body[name='nightMod'] #navi {
+   padding: 20px;
+   margin: 0;
+   width: 120px;
+   height: 200px;
+   list-style: none;
+
+}
+
+body[name='nightMod'] #navi li {
+   padding: 2px;
+}
+
+body[name='nightMod'] #navi li a {
+   text-decoration: none;
+   color: beige;
+}
+
+body[name='nightMod'] #navi li a:hover {
+   color: red;
+   font-size: 20px;
+}
+
+body[name='nightMod'] .currentSelect {
+   color: rgb(21, 114, 156);
+   font-size: 20px;
+   font-weight: bold;
+}
+
+body[name='nightMod'] #article {
+   margin: 0 auto;
+   padding: 20px;
+   border-left: 2px solid rgb(255, 255, 255);
+   color: beige;
+}

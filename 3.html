@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>연습3</title>
+
+   
+</head>
+
+<body>
+
+   1+1
+   <br><br>
+
+   <input type="button" onclick="alert('버튼이 눌렸습니다')" value="버튼1">
+   <br><br>
+
+   <input type="text" onchange="alert('내용이 바뀌었습니다')" value="내용을 입력하세요">
+   <br><br>
+
+
+   <input type="radio" name="radioBtn" value="상" checked>상
+   <input type="radio" name="radioBtn" value="중">중
+   <input type="radio" name="radioBtn" value="하">하
+   <input type="button" class="radioChecked" value="확인" onclick="check()">
+
+   <br><br><br><br>
+
+
+
+   <script>
+      document.write(1 + 1);
+      
+      function check() {
+         const getRadio = document.getElementsByName('radioBtn');
+
+         getRadio.forEach((node) => {
+            if(node.checked) {
+               alert("<"+node.value +"> 이/가 체크되었습니다");
+            }
+         })
+
+      }
+
+
+
+   </script>
+
+
+
+
+</body>
+
+</html>

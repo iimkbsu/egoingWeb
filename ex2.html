@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body input[value="hi"] {
+         height: 50px;
+         width: 50px;
+         font-size: 40px;
+      }
+
+      .scriptButton {
+         height: 50px;
+         width: 550px;
+         font-size: 20px;
+      }
+
+      body input[type='text'] {
+         height: 50px;
+         width: 550px;
+         font-size: 20px;
+         color: gray;
+      }
+   </style>
+</head>
+<body>
+   <input type="button" value="hi" onclick="alert('hi')">
+   <br>
+   <br>
+   <input type="button" class="scriptButton" value="이 버튼의 value가 그대로 alert창에 표시됨" onclick="alert1(this.value)">
+   <br>
+   <br>
+   <input type="button" class="scriptButton" value="onChange" onclick="changeText()">
+   <input type="text" value="여기에 바꿀 버튼 이름을 입력하세요" onchange="alert('onchange 메소드로 value가 바뀐 것을 alert')">
+
+
+   <script>
+      function alert1(text) {
+         alert(text);
+      }
+
+      function changeText() {
+         var textt = document.querySelector("input[type='text']");
+         document.getElementsByClassName('scriptButton')[1].setAttribute('value', textt.value);
+      }
+
+   </script>
+
+</body>
+</html>

@@ -8,6 +8,7 @@ body[name='dayMod'] #NightDay {
    width: 40px;
    height: 40px;
    transition: all 1s;
+   cursor: pointer;
 }
 
 
@@ -21,6 +22,7 @@ body[name='dayMod'] #moonSun {
    border-radius: 100%;
    background: linear-gradient(to left top, rgb(255, 158, 67), rgb(253, 213, 138));
    transition: all 1s;
+   cursor: pointer;
 }
 
 
@@ -74,7 +76,10 @@ body[name='dayMod'] #article {
    border-top: solid black 1px;
 }
 
-
+body[name='dayMod'] {
+   background-color: rgb(255, 255, 255);
+   transition: all 1s
+}
 
 
 
@@ -92,6 +97,7 @@ body[name='nightMod'] #NightDay {
    width: 40px;
    height: 40px;
    transition: all 1s;
+   cursor: pointer;
 }
 
 body[name='nightMod'] #moonSun {
@@ -104,10 +110,12 @@ body[name='nightMod'] #moonSun {
    border-radius: 50%;
    box-shadow: 5px 5px 0 0 yellow;
    transition: all 1s;
+   cursor: pointer;
 }
 
 body[name='nightMod'] {
    background-color: black;
+   transition: all 1s
 }
 
 body[name='nightMod'] #title {
